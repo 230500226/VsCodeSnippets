@@ -1,0 +1,38 @@
+// This file is located in windows at
+// C:/Users/{youruseranme}/AppData/Roaming/Code/User/snippets/javascript.json
+// All you snippets will be in that snippets folder so you can even copy that folder on a USB to past into the same location on a different computer and the sinppets will work without signing in and syncing
+
+{ //This is start of the main object bracket
+    "Matrix Multiplication": {
+        "prefix": "snip_multiplyMatrices",
+        "body": [
+            "function multiplyMatrices(matrixA, matrixB) {",
+            "    let result = new Array(16).fill(0);",
+            "    for (let i = 0; i < 4; i++) {",
+            "        for (let j = 0; j < 4; j++) {",
+            "            for (let k = 0; k < 4; k++) {",
+            "                result[i * 4 + j] += matrixA[i * 4 + k] * matrixB[k * 4 + j];",
+            "            }",
+            "        }",
+            "    }",
+            "    return result;",
+            "}"
+        ],
+        "description": "Function to multiply two 4x4 matrices"
+    }, // Don't forget this comma
+    "Fragment Shader Source Code": {
+        "prefix": "snip_fragmentShaderSourceCode",
+        "body": [
+            "const fragmentShaderSourceCode =`",
+            "    precision mediump float;",
+            "",
+            "    varying vec3 vColor;",
+            "",
+            "    void main() {",
+            "        gl_FragColor = vec4(vColor, 1);",
+            "    }",
+            "`;"
+        ],
+        "description": "Snippet for Fragment Shader Source Code"
+    }, // Add a comma here for later
+}//This is end of the main object bracket

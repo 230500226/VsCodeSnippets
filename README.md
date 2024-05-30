@@ -7,7 +7,8 @@
 
 ## Step 2: Open VS Code and sign in
 - Once you opened VS Code sign in using the profile icon on the bottom left of the screen
-- Make sure to sign in with either your github or microsoft account (university or personal)
+- Make sure to sign in with either your `github` or `microsoft account` (university or personal)
+- I recommend using a `github` account since you can test if the snippets are syncing
 - Make sure `setting sync` and `cloud changes` is on
 
 ## Step 3: Open the user snippets config file
@@ -18,7 +19,7 @@
 - You can make snippets for any language (javascript, css, html, etc...)
 - For example
   - Search for javascript and select the `javascript.json` (not javascriptreact)
-  - This will hold all the snippets you want to use in a .js file
+  - This will hold all the snippets you want to use in a `.js` file
 
 ## Step 4: Edit the user snippet config file
 - Now you will see a file called `langaugeName.json` for this example you will see `javascript.json`
@@ -124,7 +125,7 @@ Make a vsCode snippet for
 ```
 { //This is start of the main object bracket
     "Matrix Multiplication": {
-        "prefix": "multiplyMatrices",
+        "prefix": "snip_multiplyMatrices",
         "body": [
             "function multiplyMatrices(matrixA, matrixB) {",
             "    let result = new Array(16).fill(0);",
@@ -159,4 +160,22 @@ Make a vsCode snippet for
 ```
 
 ## Step 7: Using the snippet
-- To use the snippet you must be with in the 
+- There is a separate config file for each langauge as mentioned earlier so the snippets will only work for its specific language from its specifc config file
+- For example all the snippets in the `javascript.json` file can only be used in any `.js` files
+- Open a file in vscode that you made the snippet for
+- For example in a `main.js` file
+- Start typing whatever prefix name you have it set to and you will see suggestions pop up
+- I mentioned in `step 6` to start naming the prefix like `snip_name` so that when you type `snip_` you will see all your snippets show up
+- Select the one you want with the arrows and press enter
+- It will paste in your snippet
+
+## Steo 8: Check that your snippets are syncing with VS Code
+- This works only with a github account
+- go to github.com and sign in to the account that you used for VS code
+- Then go to any repoistory even this exact one
+- press the . (>) key next to the question mark and you will see VS code open in the browser
+- You should be automatically signed in
+- Then go to the user snippets config file and check that the file is the same as your VS code app
+
+## Theres a snippets example file called javascript.json to test it out if something went wrong
+
